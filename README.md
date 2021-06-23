@@ -5,10 +5,14 @@ n = 3 <br/>
 N = 1 000 000 000
 
 ## Solution
+Structure:
 
-In **main** method we call method **rarestWords** and pass file address to it. 
+<img width="201" alt="Снимок экрана 2021-06-23 в 13 56 28" src="https://user-images.githubusercontent.com/85234616/123085502-fd667f80-d42a-11eb-84c6-5ff7497c8b13.png">
 
-<img width="812" alt="Снимок экрана 2021-06-21 в 20 18 58" src="https://user-images.githubusercontent.com/85234616/122802480-1279cc00-d2ce-11eb-85f8-5bde82926227.png">
+Class **Counter** is responsible for calculating the arithmetic progression,implepents Runnable.  Method **threadCycle** considers the progression "head-on". 
+
+<img width="401" alt="Снимок экрана 2021-06-23 в 13 40 51" src="https://user-images.githubusercontent.com/85234616/123084967-67caf000-d42a-11eb-9a73-6d60893f6c75.png">
+
 
 In **rarestWords** method we call method **findWords** which returns Map with words in our file and their amount(value). By the **Collections.min** method we find the number of the rarest words. Then in Map we find words with minimal value.
 
